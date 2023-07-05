@@ -1,28 +1,26 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
- * _sqrt_recursion - main funct
- * @n: int n
- * Return: int
+ * main - check the code
+ *
+ * Return: Always 0
  */
-int _sqrt_recursion(int n)
+int main(void)
 {
-	return (_sqrt(n, 1));
-}
+    int r;
 
-/**
- * _sqrt - _sqrt_recursion
- * @n: integer paramtr
- * @i: integer parameter
- * Return: sqrt
- */
-int _sqrt(int n, int i)
-{
-	if (n < 0)
-		return (-1);
-	if ((i * i) > n)
-		return (-1);
-	if (i * i == n)
-		return (i);
-	return (_sqrt(n, i + 1));
+    r = _sqrt_recursion(1);
+    printf("%d\n", r);
+    r = _sqrt_recursion(1024);
+    printf("%d\n", r);
+    r = _sqrt_recursion(16);
+    printf("%d\n", r);
+    r = _sqrt_recursion(17);
+    printf("%d\n", r);
+    r = _sqrt_recursion(25);
+    printf("%d\n", r);
+    r = _sqrt_recursion(-1);
+    printf("%d\n", r);
+    return (0);
 }
