@@ -13,15 +13,15 @@ int check_num(char *str)
 /*Declaring variables*/
 unsigned int count;
 count = 0;
-while (count < strlen(str)) /*count string*/
+while(count < strlen(str)) /*count string*/
 {
-if (!isdigit(str[count])) /*check if str there are digit*/
+if(!isdigit(str[count])) /*check if str there are digit*/
 {
-return (0);
+return(0);
 }
 count++;
 }
-return (1);
+return(1);
 }
 /**
 * main - Print the name of the program
@@ -39,7 +39,7 @@ int sum = 0;
 count = 1;
 while (count < argc) /*Goes through the whole array*/
 {
-if (check_num(argv[count]))
+if(check_num(argv[count]))
 {
 str_to_int = atoi(argv[count]); /*ATOI --> convert string
 to int*/
@@ -50,10 +50,10 @@ not digits*/
 else
 {
 printf("Error\n");
-return (1);
+return(1);
 }
 count++;
 }
 printf("%d\n", sum); /*print sum*/
-return (0);
+return(0);
 }
