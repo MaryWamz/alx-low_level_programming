@@ -1,5 +1,4 @@
 #include "lists.h"
-#include <stdlib.h>
 
 /**
  * get_nodeint_at_index - Find the node at a given position in a list.
